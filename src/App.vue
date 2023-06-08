@@ -8,13 +8,12 @@
 -->
 <template>
   <div>
-    <router-view></router-view>
+    <van-config-provider :theme-vars="themeVars">
+      <router-view></router-view>
+    </van-config-provider>
+
   </div>
 </template>
 
-<script>
-
-export default {
-  name: 'App',
-}
+<script setup>
 </script>

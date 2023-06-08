@@ -4,10 +4,8 @@
  * @Data: Do not edit
  * @LastEditors: jinyt
  * @LastData: 
- * @Describe: src/views/home/index.vue
+ * @Describe: src/components/base/baseButton.vue
 -->
 <template>
-  <div>home</div>
-  <base-header></base-header>
-  <base-button></base-button>
+  按钮
 </template>

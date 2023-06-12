@@ -11,10 +11,10 @@ import { ConfigProvider } from 'vant';
 import router from './router';
 import App from './App.vue';
 import "vant/lib/index.css";
-import vant from "./vant.js";
+import vant from "./vant"; // .js文件
 
 import './index.css'
-import commUI from './components/index.js' 
+import commUI from './components/index' // .js文件
 
 
 createApp(App)

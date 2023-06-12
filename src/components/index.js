@@ -6,7 +6,7 @@
  * @LastData: 
  * @Describe: 
  */
-import baseCom from './base/index.js'
+import baseCom from './base/index'
 
 const components = [
   baseCom,

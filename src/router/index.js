@@ -10,6 +10,9 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import { projectName } from '../../config';
 import Home from '../views/home/index.vue'
 import Login from '../views/login/index.vue'
+import User from '../views/user/index.vue'
+import Cart from '../views/cart/index.vue'
+import Category from '../views/category/index.vue'
 
 const routes = [
   {
@@ -25,6 +28,21 @@ const routes = [
     path: '/home',
     name: 'home',
     component: Home,
+  },
+  {
+    name: 'user',
+    path: '/user',
+    component: User,
+  },
+  {
+    name: 'cart',
+    path: '/cart',
+    component: Cart,
+  },
+  {
+    name: 'category',
+    path: '/category',
+    component: Category,
   },
 ]
 

@@ -12,14 +12,19 @@ import router from './router';
 import App from './App.vue';
 import "vant/lib/index.css";
 import vant from "./vant"; // .js文件
+import pinia from './store/index';
+import { prefix } from './utils/utils'
 
 import './index.css'
 import commUI from './components/index' // .js文件
 
+const app = createApp(App)
 
-createApp(App)
-.use(router)
-.use(commUI)
-.use(vant)
-.use(ConfigProvider)
-.mount('#app')
+app.use(router)
+app.use(pinia)
+app.use(commUI)
+app.use(vant)
+app.use(ConfigProvider)
+app.mount('#app')
+
+app.config.globalProperties.prefix = prefix;

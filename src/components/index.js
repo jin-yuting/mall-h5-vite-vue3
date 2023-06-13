@@ -7,9 +7,11 @@
  * @Describe: 
  */
 import baseCom from './base/index'
+import baseOther from './other/index'
 
 const components = [
   baseCom,
+  baseOther
 ]
 
 // 按需注册全局自定义组件

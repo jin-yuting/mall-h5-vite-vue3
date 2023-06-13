@@ -14,10 +14,9 @@
   </header>
 </template>
 
-<script>
-export default {
-  props: {
-    name: {
+<script setup>
+const props = defineProps({
+  name: {
       type: String,
       default: ''
     },
@@ -25,17 +24,14 @@ export default {
       type: String,
       default: ''
     }
-  },
-  methods: {
-    goBack() {
-      if (!this.back) {
-        this.$router.go(-1)
-      } else {
-        this.$router.push({ path: this.back })
-      }
-      this.$emit('callback')
-    }
+})
+const goBack = () => {
+  if (!this.back) {
+    this.$router.go(-1)
+  } else {
+    this.$router.push({ path: this.back })
   }
+  this.$emit('callback')
 }
 </script>
 

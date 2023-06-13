@@ -17,13 +17,19 @@ export default defineConfig({
     postcss:{
       plugins:[
       ]
+    },
+    preprocessorOptions: {
+      less: {
+        charset: false,
+        additionalData: '@import "./src/styles/mixin.less";'
+      }
     }
   },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
     },
-    extensions: ['.js', '.ts', '.json']
+    extensions: ['.js', '.ts', '.json', 'less']
   },
 
   server: {

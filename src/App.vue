@@ -8,10 +8,9 @@
 -->
 <template>
   <div>
-    <van-config-provider :theme-vars="themeVars">
+    <van-config-provider>
       <router-view></router-view>
     </van-config-provider>
-
   </div>
 </template>
 

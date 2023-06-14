@@ -15,6 +15,9 @@
 </template>
 
 <script setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
 const props = defineProps({
   name: {
       type: String,
@@ -26,12 +29,7 @@ const props = defineProps({
     }
 })
 const goBack = () => {
-  if (!this.back) {
-    this.$router.go(-1)
-  } else {
-    this.$router.push({ path: this.back })
-  }
-  this.$emit('callback')
+  router.go(-1)
 }
 </script>
 

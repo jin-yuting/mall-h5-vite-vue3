@@ -55,7 +55,9 @@ import {
   Cascader,
   Switch,
   NoticeBar,
-  Circle
+  Circle,
+  AddressList,
+  AddressEdit,
 } from "vant";
 
 export default {
@@ -109,5 +111,7 @@ export default {
     Vue.use(Switch)
     Vue.use(NoticeBar)
     Vue.use(Circle)
+    Vue.use(AddressList)
+    Vue.use(AddressEdit)
   },
 };

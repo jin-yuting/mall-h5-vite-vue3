@@ -419,3 +419,53 @@ export const categoryData = [
     ],
   },
 ];
+
+export const productList = [
+  {
+      "goodsId": 10158, 
+      "goodsName": "无印良品 女式粗棉线条纹长袖T恤", 
+      "goodsIntro": "黑*横条 L", 
+      "goodsCoverImg": "/goods-img/5488564b-8335-4b0c-a5a4-52f3f03ee728.jpg", 
+      "sellingPrice": 70
+  }, 
+  {
+      "goodsId": 10195, 
+      "goodsName": "索尼 WH-1000XM3 头戴式耳机", 
+      "goodsIntro": "高解析度无线蓝牙降噪（触控面板 智能降噪 长久续航）黑色", 
+      "goodsCoverImg": "/goods-img/0dc503b2-90a2-4971-9723-c085a1844b76.jpg", 
+      "sellingPrice": 2599
+  }
+]
+
+export const detail = {
+  "goodsId": 10931, 
+  "goodsName": "iPhone 14 Pro 暗紫色 512G", 
+  "goodsIntro": "A16仿生芯片，4800万像素主摄，超瓷晶面板", 
+  "goodsCoverImg": "https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/iphone-14-pro-purple.jpg", 
+  "sellingPrice": 10599, 
+  "tag": "强力出圈", 
+  "goodsCarouselList": [
+      "https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/iphone-14-pro-purple.jpg"
+  ], 
+  "originalPrice": 10899, 
+  "goodsDetailContent": "<p><img src=\"https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/goods-detail/iphone-14-pro-1.jpg\" style=\"max-width:100%;\" contenteditable=\"false\"/><img src=\"https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/goods-detail/iphone-14-pro-2.jpg\" style=\"max-width:100%;\" contenteditable=\"false\"/><img src=\"https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/goods-detail/iphone-14-pro-3.jpg\" style=\"max-width:100%;\" contenteditable=\"false\"/></p>"
+}
+
+export const cartList = [
+  {
+    "cartItemId": 66988, 
+    "goodsId": 10933, 
+    "goodsCount": 1, 
+    "goodsName": "【旗舰新品】HUAWEI/华为Mate50 Pro 昆仑...", 
+    "goodsCoverImg": "https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/mate-50-pro-black.png", 
+    "sellingPrice": 7899
+}, 
+{
+    "cartItemId": 67319, 
+    "goodsId": 10932, 
+    "goodsCount": 1, 
+    "goodsName": "华为Mate50 Pro 昆仑霞光 512G", 
+    "goodsCoverImg": "https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/mate-50-pro-light.png", 
+    "sellingPrice": 7899
+}
+]

@@ -99,11 +99,14 @@ import {
   recommendGoodses,
 } from "../../json/home";
 import { ref, onMounted } from "vue";
-
+import { useRouter } from "vue-router";
+const router = useRouter();
 const isLogin = ref(false);
 const headerScroll = ref(false);
 // 进入详情操作
-const goToDetail = () => {};
+const goToDetail = (item) => {
+  router.push({ path: `product/${item.goodsId}` })
+};
 // 页面滑动
 const pageScroll = () =>{
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop

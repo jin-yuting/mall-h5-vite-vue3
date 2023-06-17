@@ -25,7 +25,8 @@ import UserAddress from '../views/address/index.vue'
 import addressEdit from '../views/address/edit.vue'
 import Cart from '../views/cart/index.vue'
 import Category from '../views/category/index.vue'
-import ProductList from '../views/productList/index.vue'
+import ProductList from '../views/category/productList.vue'
+import ProductDetail from '../views/category/productDetail.vue'
 
 const routes = [
   {
@@ -76,6 +77,11 @@ const routes = [
     name: 'product-list',
     path: '/product-list',
     component: ProductList,
+  },
+  {
+    path: '/product/:id',
+    name: 'product',
+    component: ProductDetail,
   },
   {
     path: '/address-edit',

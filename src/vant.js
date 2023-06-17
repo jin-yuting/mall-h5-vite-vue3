@@ -58,6 +58,11 @@ import {
   Circle,
   AddressList,
   AddressEdit,
+  ActionBar,
+  ActionBarIcon,
+  ActionBarButton,
+  SubmitBar,
+  Stepper,
 } from "vant";
 
 export default {
@@ -113,5 +118,10 @@ export default {
     Vue.use(Circle)
     Vue.use(AddressList)
     Vue.use(AddressEdit)
+    Vue.use(ActionBar)
+    Vue.use(ActionBarIcon)
+    Vue.use(ActionBarButton)
+    Vue.use(SubmitBar)
+    Vue.use(Stepper)
   },
 };

@@ -31,7 +31,7 @@ import ProductDetail from '../views/category/productDetail.vue'
 const routes = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/user'
   },
   {
     path: '/login',

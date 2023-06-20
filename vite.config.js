@@ -1,18 +1,11 @@
-/*
- * @Copyright: 
- * @file name: File name
- * @Data: Do not edit
- * @LastEditors: jinyt
- * @LastData: 
- * @Describe: 配置文件
- * @FilePath: 
- */
 import { defineConfig } from 'vite';
 import path from 'path';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
-  plugins:[vue()],
+  plugins:[
+    vue()
+  ],
   css: {
     postcss:{
       plugins:[
@@ -26,7 +19,7 @@ export default defineConfig({
     }
   },
   resolve: {
-    alias: {
+    alias: {// 别名配置
       '@': path.resolve(__dirname, './src')
     },
     extensions: ['.js', '.ts', '.json', 'less']
@@ -36,10 +29,23 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 3000,
     proxy: {
-      
+      '/api': {
+        target: 'http://jsonplaceholder.typicode.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+        configure: (proxy, options) => {
+          // proxy 是 'http-proxy' 的实例
+        }
+      },
     },
   },
   build: {
+    // 打包调试移除
+    minify: 'terser',
+    terserOptions:{
+      drop_console: true,
+      drop_debugger: true,
+    },
     outDir: 'build',
     assetsDir: 'static',
   }

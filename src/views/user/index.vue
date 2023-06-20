@@ -32,10 +32,14 @@
       </li>
     </ul>
     <base-tabbar></base-tabbar>
+    <watermark></watermark>
   </div>
 </template>
 <script setup>
+import { onMounted } from "vue";
 import { user, userList } from "./config";
+onMounted(() => {
+});
 </script>
 <style lang="less" scoped>
 .user-box {

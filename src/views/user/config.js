@@ -8,7 +8,7 @@ export const userList = [
   {name:'我的订单',value: 'order'},
   {name:'账号管理',value: 'setting'},
   {name:'地址管理',value: 'address'},
-  {name:'关于我们',value: ''},
+  {name:'关于我们的未来',value: ''},
 ]
 
 export const tabsList = [

@@ -20,7 +20,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {// 别名配置
-      '@': path.resolve(__dirname, './src')
+      '@': path.resolve(__dirname, './src'),
+      '@c': path.resolve(__dirname, './src/components')
     },
     extensions: ['.js', '.ts', '.json', 'less']
   },
@@ -28,10 +29,11 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 3000,
+    open: true,
     proxy: {
       '/api': {
         target: 'http://jsonplaceholder.typicode.com',
-        changeOrigin: true,
+        changeOrigin: true,// 是否跨域
         rewrite: (path) => path.replace(/^\/api/, ''),
         configure: (proxy, options) => {
           // proxy 是 'http-proxy' 的实例

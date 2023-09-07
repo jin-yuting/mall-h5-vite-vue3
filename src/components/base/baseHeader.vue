@@ -17,6 +17,8 @@
 <script setup>
 import { useRouter } from "vue-router";
 
+// router 路由实例
+// route 路由信息
 const router = useRouter();
 const props = defineProps({
   name: {

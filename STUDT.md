@@ -1,6 +1,5 @@
 # git 分支 之前叫master 现在为main
 
-# node 16.16.0 
 
 # 项目安装
 $ npm init vite-app <project-name>
